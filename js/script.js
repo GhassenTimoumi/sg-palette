@@ -34,24 +34,18 @@
     P.render(document.getElementById('aboutPallet'), { scale: 17, topBoards: 5, accentIndex: 2 });
     P.render(document.getElementById('preloaderPallet'), { scale: 15, topBoards: 5, accentIndex: 2, animate: true });
 
-    /* Gallery */
-    var GAL = [
-      { key: 'gal.g1', opts: { topBoards: 5, accentIndex: 2 } },
-      { key: 'gal.g2', opts: { topBoards: 7, accentIndex: 3 } },
-      { key: 'gal.g3', opts: { crate: true } },
-      { key: 'gal.g4', opts: { topBoards: 6, accentIndex: 2 } },
-      { key: 'gal.g5', opts: { topBoards: 5, accentIndex: 1 } },
-      { key: 'gal.g6', opts: { topBoards: 5, accentIndex: 2, stack: true } }
-    ];
-    var gal = document.getElementById('gallery');
-    if (gal) {
-      gal.innerHTML = GAL.map(function (g) {
-        var o = Object.assign({ scale: 16 }, g.opts);
-        return '<figure class="g-card reveal">' +
-          '<div class="g-card__img">' + P.svg(o) + '</div>' +
-          '<figcaption data-i18n="' + g.key + '"></figcaption></figure>';
-      }).join('');
-    }
+  }
+
+  /* Gallery — real pallet photos */
+  var GAL = ['gal.g1', 'gal.g2', 'gal.g3', 'gal.g4', 'gal.g5', 'gal.g6'];
+  var gal = document.getElementById('gallery');
+  if (gal) {
+    gal.innerHTML = GAL.map(function (key, i) {
+      var alt = window.SGPi18n ? window.SGPi18n.t(key) : '';
+      return '<figure class="g-card reveal">' +
+        '<div class="g-card__img g-card__img--photo"><img src="assets/gallery/g' + (i + 1) + '.jpg" alt="' + alt + '" loading="lazy" /></div>' +
+        '<figcaption data-i18n="' + key + '"></figcaption></figure>';
+    }).join('');
   }
 
   /* ---------- Social buttons ---------- */

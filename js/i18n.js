@@ -6,9 +6,6 @@
 
   var DICT = {
     fr: {
-      'topbar.eco': '🌿 Bois issu de sources durables',
-      'topbar.intl': 'Certifiées pour le transport international',
-
       'nav.products': 'Produits',
       'nav.gallery': 'Galerie',
       'nav.calc': 'Devis en ligne',
@@ -130,9 +127,6 @@
     },
 
     ar: {
-      'topbar.eco': '🌿 خشب من مصادر مستدامة',
-      'topbar.intl': 'معتمدة للنقل الدولي',
-
       'nav.products': 'المنتجات',
       'nav.gallery': 'المعرض',
       'nav.calc': 'عرض سعر فوري',
