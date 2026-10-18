@@ -7,6 +7,8 @@
   <meta name="description" content="SG Palette (SGP) — fournisseur N°1 de palettes en bois en Tunisie. 25+ ans d'expérience, 1 000 000+ palettes en stock, 200+ références. Palettes neuves, EUR/EPAL, caisses bois et sur-mesure certifiées export. Devis en ligne." />
   <meta name="theme-color" content="#F2EEE3" />
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <!-- If JS is disabled, never let the entrance overlay hide the page -->
+  <noscript><style>#preloader{display:none!important}</style></noscript>
 
   <!-- SITE BASE URL — if you move to https://www.sg-palette.com, update it here + in
        og:url / og:image / twitter:image / JSON-LD url+logo / robots.txt / sitemap.xml -->
@@ -15,7 +17,7 @@
   <!-- Open Graph -->
   <meta property="og:site_name" content="SG Palette" />
   <meta property="og:title" content="SG Palette — Le leader de la palette en bois en Tunisie" />
-  <meta property="og:description" content="Palettes en bois de qualité supérieure : neuves, EUR/EPAL, caisses & sur-mesure. 25+ ans d'expérience. Livraison partout en Tunisie." />
+  <meta property="og:description" content="Palettes en bois de qualité supérieure : neuves, EUR/EPAL, caisses &amp; sur-mesure. 25+ ans d'expérience. Livraison partout en Tunisie." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://ghassentimoumi.github.io/sg-palette/" />
   <meta property="og:image" content="https://ghassentimoumi.github.io/sg-palette/assets/logo.png" />
@@ -27,12 +29,12 @@
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="SG Palette — Le leader de la palette en bois en Tunisie" />
-  <meta name="twitter:description" content="Palettes en bois de qualité supérieure : neuves, EUR/EPAL, caisses & sur-mesure. Livraison partout en Tunisie." />
+  <meta name="twitter:description" content="Palettes en bois de qualité supérieure : neuves, EUR/EPAL, caisses &amp; sur-mesure. Livraison partout en Tunisie." />
   <meta name="twitter:image" content="https://ghassentimoumi.github.io/sg-palette/assets/logo.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&family=Cairo:wght@600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&amp;family=Inter:wght@400;500;600;700&amp;family=Cairo:wght@600;700;800;900&amp;display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 
   <script type="application/ld+json">
@@ -57,6 +59,19 @@
     <div class="preloader__pallet" id="preloaderPallet"></div>
     <div class="preloader__word">SG&nbsp;PALETTE</div>
   </div>
+  <!-- Independent failsafe: removes the overlay even if a later script errors out -->
+  <script>
+    (function () {
+      function hide() {
+        var p = document.getElementById('preloader');
+        if (!p) return;
+        p.style.opacity = '0'; p.style.pointerEvents = 'none';
+        setTimeout(function () { if (p.parentNode) p.parentNode.removeChild(p); }, 600);
+      }
+      window.addEventListener('load', function () { setTimeout(hide, 900); });
+      setTimeout(hide, 4000); // hard cap — site is never blocked
+    })();
+  </script>
 
   <!-- ===== Nav ===== -->
   <header class="nav" id="nav">
@@ -71,8 +86,8 @@
         <a href="#contact" data-i18n="nav.contact">Contact</a>
       </nav>
       <div class="lang" role="group" aria-label="Langue">
-        <button data-lang-btn="fr" class="lang__btn">FR</button>
-        <button data-lang-btn="ar" class="lang__btn" lang="ar">ع</button>
+        <button data-lang-btn="fr" class="lang__btn" aria-pressed="true">FR</button>
+        <button data-lang-btn="ar" class="lang__btn" lang="ar" aria-pressed="false">ع</button>
       </div>
       <a href="#contact" class="btn btn--primary nav__cta" data-i18n="nav.cta">Demander un devis</a>
       <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
@@ -93,7 +108,7 @@
         </div>
         <ul class="hero__badges">
           <li data-i18n="hero.badge1">✔ Livraison partout en Tunisie</li>
-          <li data-i18n="hero.badge2">✔ Qualité contrôlée & traçabilité</li>
+          <li data-i18n="hero.badge2">✔ Qualité contrôlée &amp; traçabilité</li>
           <li data-i18n="hero.badge3">✔ Solutions sur-mesure</li>
         </ul>
       </div>
@@ -113,7 +128,7 @@
       <div class="stat reveal"><div class="stat__num" data-count="25" data-suffix="+">0</div><div class="stat__label" data-i18n="stat.years">ans d'expérience</div></div>
       <div class="stat reveal"><div class="stat__num" data-count="1" data-suffix="M+">0</div><div class="stat__label" data-i18n="stat.stock">palettes en stock</div></div>
       <div class="stat reveal"><div class="stat__num" data-count="200" data-suffix="+">0</div><div class="stat__label" data-i18n="stat.refs">références disponibles</div></div>
-      <div class="stat reveal"><div class="stat__num" data-count="100" data-suffix="%">0</div><div class="stat__label" data-i18n="stat.eco">bois durable & contrôlé</div></div>
+      <div class="stat reveal"><div class="stat__num" data-count="100" data-suffix="%">0</div><div class="stat__label" data-i18n="stat.eco">bois durable &amp; contrôlé</div></div>
     </div>
   </section>
 
@@ -293,10 +308,10 @@
         <ul class="contact__list">
           <li><span class="contact__ico">☎</span><div><strong data-i18n="contact.phone">Téléphone</strong><a href="tel:+21651886122">+216 51 886 122</a></div></li>
           <li><span class="contact__ico">✉</span><div><strong data-i18n="contact.email">Email</strong><a href="mailto:contact@sg-palette.com">contact@sg-palette.com</a></div></li>
-          <li><span class="contact__ico">📍</span><div><strong data-i18n="contact.addr">Adresse</strong><span data-i18n="contact.addrval">Boujardgua, Mornag, Ben Arous — Tunisie</span><a class="contact__maplink" href="https://www.google.com/maps/search/?api=1&query=Boujardgua,+Mornag,+Ben+Arous,+Tunisie" target="_blank" rel="noopener" data-i18n="contact.map">Voir sur Google Maps →</a></div></li>
+          <li><span class="contact__ico">📍</span><div><strong data-i18n="contact.addr">Adresse</strong><span data-i18n="contact.addrval">Boujardgua, Mornag, Ben Arous — Tunisie</span><a class="contact__maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Boujardgua,+Mornag,+Ben+Arous,+Tunisie" target="_blank" rel="noopener" data-i18n="contact.map">Voir sur Google Maps →</a></div></li>
         </ul>
         <div class="contact__map reveal">
-          <iframe title="SG Palette — Mornag, Ben Arous" src="https://maps.google.com/maps?q=Mornag,%20Ben%20Arous,%20Tunisie&z=12&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe title="SG Palette — Mornag, Ben Arous" src="https://maps.google.com/maps?q=Mornag,%20Ben%20Arous,%20Tunisie&amp;z=12&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div class="social contact__social" id="socialRow"></div>
       </div>
@@ -352,7 +367,7 @@
         <h4 data-i18n="foot.contact">Contact</h4>
         <a href="tel:+21651886122">+216 51 886 122</a>
         <a href="mailto:contact@sg-palette.com">contact@sg-palette.com</a>
-        <a href="https://www.google.com/maps/search/?api=1&query=Mornag,+Ben+Arous,+Tunisie" target="_blank" rel="noopener" data-i18n="contact.addrval">Mornag, Ben Arous — Tunisie</a>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Mornag,+Ben+Arous,+Tunisie" target="_blank" rel="noopener" data-i18n="contact.addrval">Mornag, Ben Arous — Tunisie</a>
       </div>
     </div>
     <div class="footer__bar">

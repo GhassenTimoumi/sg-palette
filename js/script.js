@@ -184,12 +184,9 @@
     nums.forEach(function (n) { cio.observe(n); });
   }
 
-  /* ---------- Year + preloader ---------- */
+  /* ---------- Year ---------- */
+  /* (preloader is handled by the independent inline failsafe in index.html) */
   var y = document.getElementById('year');
   if (y) y.textContent = new Date().getFullYear();
   recalc();
-  var pre = document.getElementById('preloader');
-  function hidePre() { if (pre) { pre.classList.add('done'); setTimeout(function () { if (pre.parentNode) pre.parentNode.removeChild(pre); }, 600); } }
-  window.addEventListener('load', function () { setTimeout(hidePre, 900); });
-  setTimeout(hidePre, 2600); // safety
 })();

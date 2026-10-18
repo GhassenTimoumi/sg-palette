@@ -265,7 +265,9 @@
     });
 
     document.querySelectorAll('[data-lang-btn]').forEach(function (b) {
-      b.classList.toggle('active', b.getAttribute('data-lang-btn') === lang);
+      var match = b.getAttribute('data-lang-btn') === lang;
+      b.classList.toggle('active', match);
+      b.setAttribute('aria-pressed', String(match));
     });
     try { localStorage.setItem('sgp-lang', lang); } catch (e) {}
     global.SGP_LANG = lang;
