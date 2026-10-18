@@ -1,0 +1,15 @@
+# SG Palette — https://ghassentimoumi.github.io/sg-palette/
+User-agent: *
+Allow: /
+
+# AI / generative-search crawlers are welcome (GEO)
+User-agent: GPTBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://ghassentimoumi.github.io/sg-palette/sitemap.xml
