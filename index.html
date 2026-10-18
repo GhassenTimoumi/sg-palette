@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SGP · SG Palette — Le leader de la palette en bois en Tunisie</title>
+  <meta name="description" content="SG Palette (SGP) — fournisseur N°1 de palettes en bois en Tunisie. 25+ ans d'expérience, 1 000 000+ palettes en stock, 200+ références. Palettes neuves, EUR/EPAL, caisses bois et sur-mesure certifiées export. Devis en ligne." />
+  <meta name="theme-color" content="#F2EEE3" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <meta property="og:title" content="SG Palette — Le leader de la palette en bois en Tunisie" />
+  <meta property="og:description" content="Palettes en bois de qualité supérieure : neuves, EUR/EPAL, caisses & sur-mesure. 25+ ans d'expérience. Livraison partout en Tunisie." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/logo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&family=Cairo:wght@600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Manufacturer",
+    "name": "SG Palette",
+    "alternateName": "SGP — Société Galgaoui",
+    "description": "Fabrication et commercialisation de palettes en bois en Tunisie.",
+    "url": "https://www.sg-palette.com",
+    "logo": "assets/logo.png",
+    "telephone": "+21651886122",
+    "email": "contact@sg-palette.com",
+    "address": { "@type": "PostalAddress", "streetAddress": "Boujardgua", "addressLocality": "Mornag", "addressRegion": "Ben Arous", "addressCountry": "TN" }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ===== Pallet entrance overlay ===== -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__pallet" id="preloaderPallet"></div>
+    <div class="preloader__word">SG&nbsp;PALETTE</div>
+  </div>
+
+  <!-- ===== Topbar ===== -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span class="topbar__item" data-i18n="topbar.eco">🌿 Bois issu de sources durables</span>
+      <span class="topbar__dot">•</span>
+      <span class="topbar__item" data-i18n="topbar.intl">Certifiées pour le transport international</span>
+      <span class="topbar__dot">•</span>
+      <a class="topbar__item topbar__link" href="tel:+21651886122">☎ +216 51 886 122</a>
+    </div>
+  </div>
+
+  <!-- ===== Nav ===== -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#accueil" class="brand" aria-label="SG Palette"><img src="assets/logo.png" alt="Logo SG Palette" class="brand__logo" /></a>
+      <nav class="nav__links" aria-label="Navigation">
+        <a href="#produits" data-i18n="nav.products">Produits</a>
+        <a href="#galerie" data-i18n="nav.gallery">Galerie</a>
+        <a href="#devis" data-i18n="nav.calc">Devis en ligne</a>
+        <a href="#pourquoi" data-i18n="nav.why">Pourquoi nous</a>
+        <a href="#apropos" data-i18n="nav.about">À propos</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="lang" role="group" aria-label="Langue">
+        <button data-lang-btn="fr" class="lang__btn">FR</button>
+        <button data-lang-btn="ar" class="lang__btn" lang="ar">ع</button>
+      </div>
+      <a href="#contact" class="btn btn--primary nav__cta" data-i18n="nav.cta">Demander un devis</a>
+      <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="accueil">
+    <div class="hero__grid-bg" aria-hidden="true"></div>
+    <div class="container hero__inner">
+      <div class="hero__copy reveal">
+        <span class="eyebrow"><i class="dot"></i> <span data-i18n="hero.eyebrow">Fournisseur N°1 en Tunisie</span></span>
+        <h1 class="hero__title" data-i18n="hero.title" data-i18n-html>Le leader de la <span class="hl">palette en bois</span> en Tunisie</h1>
+        <p class="hero__lead" data-i18n="hero.lead">Depuis plus de 25 ans, SG Palette fabrique et livre des palettes en bois de qualité supérieure — robustes, durables et taillées pour vos besoins de manutention, de stockage et d'export.</p>
+        <div class="hero__actions">
+          <a href="#devis" class="btn btn--primary btn--lg" data-i18n="hero.cta1">Demander un devis gratuit</a>
+          <a href="#produits" class="btn btn--ghost btn--lg" data-i18n="hero.cta2">Découvrir nos produits →</a>
+        </div>
+        <ul class="hero__badges">
+          <li data-i18n="hero.badge1">✔ Livraison partout en Tunisie</li>
+          <li data-i18n="hero.badge2">✔ Qualité contrôlée & traçabilité</li>
+          <li data-i18n="hero.badge3">✔ Solutions sur-mesure</li>
+        </ul>
+      </div>
+      <div class="hero__visual reveal">
+        <div class="hero__glow" aria-hidden="true"></div>
+        <div class="hero__pallet" id="heroPallet"></div>
+        <div class="hero__chip hero__chip--1">EUR / EPAL</div>
+        <div class="hero__chip hero__chip--2">120×80 · 120×100</div>
+        <div class="hero__chip hero__chip--3" data-i18n="hero.badge3plain">Sur-mesure</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Stats ===== -->
+  <section class="stats">
+    <div class="container stats__grid">
+      <div class="stat reveal"><div class="stat__num" data-count="25" data-suffix="+">0</div><div class="stat__label" data-i18n="stat.years">ans d'expérience</div></div>
+      <div class="stat reveal"><div class="stat__num" data-count="1" data-suffix="M+">0</div><div class="stat__label" data-i18n="stat.stock">palettes en stock</div></div>
+      <div class="stat reveal"><div class="stat__num" data-count="200" data-suffix="+">0</div><div class="stat__label" data-i18n="stat.refs">références disponibles</div></div>
+      <div class="stat reveal"><div class="stat__num" data-count="100" data-suffix="%">0</div><div class="stat__label" data-i18n="stat.eco">bois durable & contrôlé</div></div>
+    </div>
+  </section>
+
+  <!-- ===== Points forts ===== -->
+  <section class="section" id="pointsforts">
+    <div class="container">
+      <header class="section__head reveal">
+        <span class="eyebrow eyebrow--center"><i class="dot"></i> <span data-i18n="pf.eyebrow">Points forts</span></span>
+        <h2 class="section__title" data-i18n="pf.title">Pourquoi SGP fait la différence</h2>
+        <p class="section__sub" data-i18n="pf.sub">Trois promesses simples qui font la confiance de nos clients.</p>
+      </header>
+      <div class="cards cards--3">
+        <article class="card reveal"><div class="card__ico">🪵</div><h3 data-i18n="pf.c1.t">Qualité supérieure</h3><p data-i18n="pf.c1.d"></p></article>
+        <article class="card reveal"><div class="card__ico">📐</div><h3 data-i18n="pf.c2.t">Large gamme</h3><p data-i18n="pf.c2.d"></p></article>
+        <article class="card reveal"><div class="card__ico">🤝</div><h3 data-i18n="pf.c3.t">Service client</h3><p data-i18n="pf.c3.d"></p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Produits ===== -->
+  <section class="section section--alt" id="produits">
+    <div class="container">
+      <header class="section__head reveal">
+        <span class="eyebrow eyebrow--center"><i class="dot"></i> <span data-i18n="prod.eyebrow">Notre gamme</span></span>
+        <h2 class="section__title" data-i18n="prod.title">Des palettes pour chaque usage</h2>
+        <p class="section__sub" data-i18n="prod.sub"></p>
+      </header>
+      <div class="cards cards--3 products">
+        <article class="product reveal"><div class="product__tag" data-i18n="prod.p1.tag">Standard</div><h3 data-i18n="prod.p1.t"></h3><p data-i18n="prod.p1.d"></p></article>
+        <article class="product reveal product--feature"><div class="product__tag product__tag--teal" data-i18n="prod.p2.tag">Le plus demandé</div><h3 data-i18n="prod.p2.t"></h3><p data-i18n="prod.p2.d"></p></article>
+        <article class="product reveal"><div class="product__tag" data-i18n="prod.p3.tag">Emballage</div><h3 data-i18n="prod.p3.t"></h3><p data-i18n="prod.p3.d"></p></article>
+        <article class="product reveal"><div class="product__tag" data-i18n="prod.p4.tag">Projet</div><h3 data-i18n="prod.p4.t"></h3><p data-i18n="prod.p4.d"></p></article>
+        <article class="product reveal"><div class="product__tag" data-i18n="prod.p5.tag">International</div><h3 data-i18n="prod.p5.t"></h3><p data-i18n="prod.p5.d"></p></article>
+        <article class="product reveal"><div class="product__tag" data-i18n="prod.p6.tag">Économique</div><h3 data-i18n="prod.p6.t"></h3><p data-i18n="prod.p6.d"></p></article>
+      </div>
+      <div class="section__cta reveal"><a href="#contact" class="btn btn--primary btn--lg" data-i18n="prod.cta">Parler à un conseiller</a></div>
+    </div>
+  </section>
+
+  <!-- ===== Galerie ===== -->
+  <section class="section" id="galerie">
+    <div class="container">
+      <header class="section__head reveal">
+        <span class="eyebrow eyebrow--center"><i class="dot"></i> <span data-i18n="gal.eyebrow">Galerie</span></span>
+        <h2 class="section__title" data-i18n="gal.title">Nos palettes en images</h2>
+        <p class="section__sub" data-i18n="gal.sub"></p>
+      </header>
+      <div class="gallery" id="gallery"></div>
+    </div>
+  </section>
+
+  <!-- ===== Devis en ligne / Calculator ===== -->
+  <section class="section section--alt" id="devis">
+    <div class="container calc">
+      <div class="calc__intro reveal">
+        <span class="eyebrow"><i class="dot"></i> <span data-i18n="calc.eyebrow">Devis instantané</span></span>
+        <h2 class="section__title" data-i18n="calc.title">Estimez votre devis en ligne</h2>
+        <p class="section__sub" data-i18n="calc.sub"></p>
+        <div class="calc__preview" id="calcPreview"></div>
+      </div>
+
+      <div class="calc__panel reveal">
+        <div class="field"><label data-i18n="calc.type">Type de produit</label>
+          <select id="calcType">
+            <option value="standard" data-i18n="calc.t.standard">Palette standard</option>
+            <option value="euro" data-i18n="calc.t.euro">EUR / EPAL</option>
+            <option value="crate" data-i18n="calc.t.crate">Caisse en bois</option>
+            <option value="heavy" data-i18n="calc.t.heavy">Palette renforcée</option>
+          </select>
+        </div>
+        <div class="field"><label data-i18n="calc.size">Format</label>
+          <select id="calcSize">
+            <option value="80x60">80 × 60</option>
+            <option value="100x80">100 × 80</option>
+            <option value="120x80" selected>120 × 80</option>
+            <option value="120x100">120 × 100</option>
+          </select>
+        </div>
+        <div class="field"><label data-i18n="calc.cond">État</label>
+          <div class="seg" id="calcCond">
+            <button type="button" class="seg__btn active" data-val="new" data-i18n="calc.cond.new">Neuve</button>
+            <button type="button" class="seg__btn" data-val="used" data-i18n="calc.cond.used">Réemployée</button>
+          </div>
+        </div>
+        <label class="switch"><input type="checkbox" id="calcTreat" /><span class="switch__track"></span><span data-i18n="calc.treat">Traitement export (HT / ISPM 15)</span></label>
+        <div class="field"><label><span data-i18n="calc.qty">Quantité</span> : <strong id="calcQtyVal">100</strong></label>
+          <input type="range" id="calcQty" min="10" max="5000" step="10" value="100" />
+        </div>
+        <div class="calc__result">
+          <div class="calc__row"><span data-i18n="calc.unit">Prix unitaire estimé</span><strong id="calcUnit">—</strong></div>
+          <div class="calc__row calc__row--total"><span data-i18n="calc.total">Total estimé</span><strong id="calcTotal">—</strong></div>
+        </div>
+        <p class="calc__note" data-i18n="calc.note"></p>
+        <button class="btn btn--primary btn--block btn--lg" id="calcSend" data-i18n="calc.send">Envoyer cette estimation</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Pourquoi nous ===== -->
+  <section class="section" id="pourquoi">
+    <div class="container why">
+      <div class="why__copy reveal">
+        <span class="eyebrow"><i class="dot"></i> <span data-i18n="why.eyebrow">Pourquoi nous</span></span>
+        <h2 class="section__title" data-i18n="why.title">Une entreprise bâtie sur l'exigence</h2>
+        <p class="section__sub" data-i18n="why.sub"></p>
+        <a href="#apropos" class="btn btn--ghost" data-i18n="why.more">En savoir plus →</a>
+      </div>
+      <div class="why__list">
+        <div class="why__item reveal"><div class="why__num">01</div><div><h3 data-i18n="why.1.t"></h3><p data-i18n="why.1.d"></p></div></div>
+        <div class="why__item reveal"><div class="why__num">02</div><div><h3 data-i18n="why.2.t"></h3><p data-i18n="why.2.d"></p></div></div>
+        <div class="why__item reveal"><div class="why__num">03</div><div><h3 data-i18n="why.3.t"></h3><p data-i18n="why.3.d"></p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Processus ===== -->
+  <section class="section section--dark" id="processus">
+    <div class="container">
+      <header class="section__head reveal">
+        <span class="eyebrow eyebrow--center eyebrow--light"><i class="dot"></i> <span data-i18n="proc.eyebrow">Notre processus</span></span>
+        <h2 class="section__title" data-i18n="proc.title">Du bois brut à la palette livrée</h2>
+        <p class="section__sub" data-i18n="proc.sub"></p>
+      </header>
+      <div class="steps">
+        <div class="step reveal"><span class="step__n">1</span><h3 data-i18n="proc.1.t"></h3><p data-i18n="proc.1.d"></p></div>
+        <div class="step reveal"><span class="step__n">2</span><h3 data-i18n="proc.2.t"></h3><p data-i18n="proc.2.d"></p></div>
+        <div class="step reveal"><span class="step__n">3</span><h3 data-i18n="proc.3.t"></h3><p data-i18n="proc.3.d"></p></div>
+        <div class="step reveal"><span class="step__n">4</span><h3 data-i18n="proc.4.t"></h3><p data-i18n="proc.4.d"></p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== À propos ===== -->
+  <section class="section" id="apropos">
+    <div class="container about">
+      <div class="about__visual reveal">
+        <div class="about__badge"><span class="about__badge-num">25<span>+</span></span><span class="about__badge-txt" data-i18n="about.badge">années d'expertise</span></div>
+        <div class="about__img" id="aboutPallet"></div>
+      </div>
+      <div class="about__copy reveal">
+        <span class="eyebrow"><i class="dot"></i> <span data-i18n="about.eyebrow">Qui sommes-nous</span></span>
+        <h2 class="section__title" data-i18n="about.title">La Société Galgaoui</h2>
+        <p data-i18n="about.p1" data-i18n-html></p>
+        <p data-i18n="about.p2"></p>
+        <div class="about__pills">
+          <span data-i18n="about.pill1"></span><span data-i18n="about.pill2"></span><span data-i18n="about.pill3"></span><span data-i18n="about.pill4"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA band ===== -->
+  <section class="ctaband">
+    <div class="container ctaband__inner reveal">
+      <div><h2 data-i18n="cta.title">Un projet de palettes ? Parlons-en.</h2><p data-i18n="cta.sub"></p></div>
+      <div class="ctaband__actions">
+        <a href="tel:+21651886122" class="btn btn--light btn--lg">☎ +216 51 886 122</a>
+        <a href="#contact" class="btn btn--primary btn--lg" data-i18n="cta.quote">Demander un devis</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section class="section section--alt" id="contact">
+    <div class="container contact">
+      <div class="contact__info reveal">
+        <span class="eyebrow"><i class="dot"></i> <span data-i18n="contact.eyebrow">Contact</span></span>
+        <h2 class="section__title" data-i18n="contact.title">Demandez votre devis</h2>
+        <p class="section__sub" data-i18n="contact.sub"></p>
+        <ul class="contact__list">
+          <li><span class="contact__ico">☎</span><div><strong data-i18n="contact.phone">Téléphone</strong><a href="tel:+21651886122">+216 51 886 122</a></div></li>
+          <li><span class="contact__ico">✉</span><div><strong data-i18n="contact.email">Email</strong><a href="mailto:contact@sg-palette.com">contact@sg-palette.com</a></div></li>
+          <li><span class="contact__ico">📍</span><div><strong data-i18n="contact.addr">Adresse</strong><span data-i18n="contact.addrval">Boujardgua, Mornag, Ben Arous — Tunisie</span><a class="contact__maplink" href="https://www.google.com/maps/search/?api=1&query=Boujardgua,+Mornag,+Ben+Arous,+Tunisie" target="_blank" rel="noopener" data-i18n="contact.map">Voir sur Google Maps →</a></div></li>
+        </ul>
+        <div class="contact__map reveal">
+          <iframe title="SG Palette — Mornag, Ben Arous" src="https://maps.google.com/maps?q=Mornag,%20Ben%20Arous,%20Tunisie&z=12&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="social contact__social" id="socialRow"></div>
+      </div>
+
+      <form class="contact__form reveal" id="quoteForm" novalidate>
+        <div class="field"><label for="name" data-i18n="form.name">Nom complet</label><input id="name" name="name" type="text" data-i18n-ph="form.name.ph" required /></div>
+        <div class="field-row">
+          <div class="field"><label for="phone" data-i18n="form.phone">Téléphone</label><input id="phone" name="phone" type="tel" data-i18n-ph="form.phone.ph" required /></div>
+          <div class="field"><label for="email" data-i18n="form.email">Email</label><input id="email" name="email" type="email" data-i18n-ph="form.email.ph" /></div>
+        </div>
+        <div class="field"><label for="product" data-i18n="form.need">Besoin</label>
+          <select id="product" name="product">
+            <option value="" data-i18n="form.need.ph">Sélectionnez…</option>
+            <option data-i18n="prod.p1.t">Palettes neuves</option>
+            <option data-i18n="prod.p2.t">EUR / EPAL</option>
+            <option data-i18n="prod.p3.t">Caisses en bois</option>
+            <option data-i18n="prod.p4.t">Sur-mesure</option>
+            <option data-i18n="prod.p5.t">Certifiées export</option>
+            <option data-i18n="prod.p6.t">Réemployées</option>
+          </select>
+        </div>
+        <div class="field"><label for="message" data-i18n="form.msg">Message</label><textarea id="message" name="message" rows="4" data-i18n-ph="form.msg.ph"></textarea></div>
+        <button type="submit" class="btn btn--primary btn--block btn--lg" data-i18n="form.send">Envoyer la demande</button>
+        <p class="form__note" id="formNote" hidden data-i18n="form.ok">✔ Merci ! Votre demande a bien été préparée.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="assets/favicon.svg" alt="SGP" class="footer__mark" />
+        <p class="footer__name">SG Palette</p>
+        <p class="footer__tag" data-i18n="foot.tag"></p>
+        <div class="social" id="socialFooter"></div>
+      </div>
+      <div class="footer__col">
+        <h4 data-i18n="foot.products">Produits</h4>
+        <a href="#produits" data-i18n="prod.p1.t">Palettes neuves</a>
+        <a href="#produits" data-i18n="prod.p2.t">EUR / EPAL</a>
+        <a href="#galerie" data-i18n="nav.gallery">Galerie</a>
+        <a href="#devis" data-i18n="nav.calc">Devis en ligne</a>
+      </div>
+      <div class="footer__col">
+        <h4 data-i18n="foot.company">Entreprise</h4>
+        <a href="#pourquoi" data-i18n="nav.why">Pourquoi nous</a>
+        <a href="#processus" data-i18n="nav.process">Fabrication</a>
+        <a href="#apropos" data-i18n="nav.about">À propos</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </div>
+      <div class="footer__col">
+        <h4 data-i18n="foot.contact">Contact</h4>
+        <a href="tel:+21651886122">+216 51 886 122</a>
+        <a href="mailto:contact@sg-palette.com">contact@sg-palette.com</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Mornag,+Ben+Arous,+Tunisie" target="_blank" rel="noopener" data-i18n="contact.addrval">Mornag, Ben Arous — Tunisie</a>
+      </div>
+    </div>
+    <div class="footer__bar">
+      <div class="container footer__bar-inner">
+        <span>© <span id="year"></span> <span data-i18n="foot.rights">SG Palette — Société Galgaoui.</span></span>
+        <span class="footer__made" data-i18n="foot.made"></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a class="wa-float" href="https://wa.me/21651886122" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.82 9.82 0 001.516 5.26l-.999 3.648 3.472-.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.297-.496.099-.199.05-.372-.025-.521-.074-.149-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+  </a>
+
+  <script src="js/pallets.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

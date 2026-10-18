@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#F2EEE3"/>
+  <!-- isometric pallet, built from top-face parallelograms -->
+  <g transform="translate(32 34)">
+    <!-- soft shadow -->
+    <ellipse cx="0" cy="16" rx="20" ry="7" fill="#2E2016" opacity="0.10"/>
+    <!-- bottom deck (darker) -->
+    <g transform="matrix(0.866,0.5,-0.866,0.5,0,6)">
+      <rect x="-18" y="-10" width="12" height="20" fill="#9C6B38"/>
+      <rect x="-4"  y="-10" width="8"  height="20" fill="#9C6B38"/>
+      <rect x="6"   y="-10" width="12" height="20" fill="#9C6B38"/>
+    </g>
+    <!-- stringers -->
+    <g transform="matrix(0.866,0.5,-0.866,0.5,0,0)">
+      <rect x="-18" y="-6" width="36" height="5" fill="#B9823F"/>
+      <rect x="-18" y="2"  width="36" height="5" fill="#B9823F"/>
+    </g>
+    <!-- top deck (lighter) with teal accent -->
+    <g transform="matrix(0.866,0.5,-0.866,0.5,0,-6)">
+      <rect x="-18" y="-12" width="9" height="24" fill="#D7A863"/>
+      <rect x="-7"  y="-12" width="9" height="24" fill="#16A085"/>
+      <rect x="4"   y="-12" width="9" height="24" fill="#D7A863"/>
+    </g>
+  </g>
+</svg>
